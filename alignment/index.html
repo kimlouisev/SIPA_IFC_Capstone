@@ -218,7 +218,7 @@
         
   
   <span class="md-ellipsis">
-    1. Background on the Insurance Product
+    1. Background of the Insurance Product
     
   </span>
   
@@ -309,30 +309,6 @@
       Questions
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Questions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#weather-based-index-insurance-verification" class="md-nav__link">
-    <span class="md-ellipsis">
-      Weather-based index insurance verification
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#area-yield-index-insurance-verification" class="md-nav__link">
-    <span class="md-ellipsis">
-      Area-yield index insurance verification
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -425,8 +401,7 @@
 
 <h1 id="3-alignment-of-payouts-with-farmer-losses">3. Alignment of Payouts with Farmer Losses</h1>
 <div style="border: 1px solid #007BFF; background-color: #e6f7ff; padding: 15px; border-radius: 8px;">
-The section will look at how well the chosen index for the insurance matches farmer's experience of losses. TWo verification methods are tailored specifically for weather-based and area-yield index insurance, because the underlying indices differ. For weather-based insurance, we directly compare index payouts with years farmers recall as the worst.
-For area-yield insurance, we triangulate farmer recall, yield data, and satellite imagery to verify payout accuracy.
+This section examines how well the chosen insurance index aligns with farmers' experiences of loss. Given the different data types used in weather-based and area-yield insurance, two tailored verification methods are applied. For weather-based insurance, index payouts are directly compared with the years farmers recall as the worst. For area-yield insurance, a combination of farmer recollections, area yield data, and satellite imagery is used to verify payout accuracy.
 </div>
 
 <h2 id="questions">Questions</h2>
@@ -434,9 +409,11 @@ For area-yield insurance, we triangulate farmer recall, yield data, and satellit
 🔍 a. How well does what payouts would have been align with farmer payout expectations based on your chosen index?
 </h3>
 
-<h4 id="weather-based-index-insurance-verification">Weather-based index insurance verification</h4>
-<p>The accuracy of a chosen weather-based index can be verified through a simple method, outlined below.</p>
 <p><img alt="Weather-based" src="../images/9.jpg" /></p>
+<h4 style="color:#1890ff; font-size:18px;">Weather-based index insurance verification</h4>
+
+<p>The accuracy of a chosen area-yield index can be verified through a slightly different method, outlined below. Because area-yield indices rely on aggregate data, they can be less precise. To assess accuracy of the index, it's worth comparing area-yield data with both farmer recall of bad years and satellite imagery, allowing for better triangulation.</p>
+<p><u>Source of data:</u> The example uses data from Ethiopia's Genete village collected by the Columbia Climate School, spanning the years 1983 - 2020. The raw data includes satellite rainfall measurements and farmer recollection of bad years, which were used to arrive at index and farmer expected payout values. </p>
 <p><b> Step 1: Identify Index Bad Year Payout based on weather index data </b></p>
 <p>Begin by calculating the would-be payout for each year based on historical weather data and the insurance product's design.</p>
 <ul>
@@ -473,18 +450,21 @@ For area-yield insurance, we triangulate farmer recall, yield data, and satellit
 <p><b> Step 4: Analyze accuracy and visualize alignment across sources </b></p>
 <p>Summarize the findings using both quantitative metrics and visual tools:</p>
 <ul>
-<li>Calculate:</li>
-<li>Matching rate – the percentage of years where index payouts matched farmer expectations.</li>
-<li>Downside gap – average difference in years where the index underpaid relative to farmer expectations.</li>
+<li>Calculate:<ul>
+<li><u> Matching Rate </u> – the percentage of years where index payouts matched farmer expectations.</li>
+<li><u> Average Downside Difference </u> – average difference in years where the index underpaid relative to farmer expectations.</li>
+</ul>
+</li>
 <li>Create scatter plots to display alignment and mismatches across all years.</li>
 <li>Use these visuals to engage stakeholders—insurance providers, regulators, and farmer organizations—in identifying needed improvements.</li>
 </ul>
 <p>This step transforms data into insight: Are payouts happening when they matter most to farmers?</p>
-<p><b><u>Source of data for Verification Example: </u></b></p>
+<p><b> Interpretation </b> </p>
 <ul>
-<li>Ethiopia, Collected by Columbia Climate School</li>
-<li>Time period: 1983-2020, Focus on village Genete</li>
+<li>A high matching rate and low average downside difference indicate a well-aligned index.</li>
+<li>A low matching rate or high average downside difference suggests the need for index refinement or additional support mechanisms.</li>
 </ul>
+<p><em> Note: These metrics should be interpreted in context—what counts as "high" or "low" can vary by case </em></p>
 <p><a href="https://docs.google.com/spreadsheets/d/1z8th1AU5V0j2geHbZM7CPwVdK2TJPCLo/edit?gid=543532796#gid=543532796">🔗 Illustrative Verification Sheet</a></p>
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBNQ59vs3kKv2C57Xf-Xsui4F1LzuvU2BoXXGJSUbhAdTTV8UcaWN8RAtgc5KPWg/pubhtml?gid=543532796&single=true&amp;headers=false" 
         width="100%" 
@@ -494,21 +474,22 @@ For area-yield insurance, we triangulate farmer recall, yield data, and satellit
 <p><br>
 <br></p>
 <hr />
-<h4 id="area-yield-index-insurance-verification">Area-yield index insurance verification</h4>
 <p><img alt="Area-yield" src="../images/10.jpg" /></p>
-<p><u>Steps to conducting the verification:</u></p>
-<ol>
-<li>Identify Yield Bad Year Ranking based on Area-Yield Data</li>
-<li>Identify Farmer Recollected Bad Year Ranking</li>
-<li>Identify Satellite Bad Year Ranking</li>
-<li>Compare ranking from Area-Yield, Farmer Recollection, and Satellite*</li>
-<li>
-<p>Compare severity / magnitude of event across all three sources in the worst year for average yields <br>
+<h4 style="color:#1890ff; font-size:18px;">Area-yield index insurance verification</h4>
+
+<p><u>Source of data:</u> The example uses data from Rwanda's Karongi village collected by One Acre Fund. The raw data includes:
+ - average yield data for maize harvested in Season A from 2014-2021 (8 years)
+ - farmer recollection of bad years from 1992-2021 (30 years)
+ - satellite rainfall measurements from CHIRPS  from 1992-2021 (30 years)</p>
+<p><b>Step 1: Identify Yield Bad Year Ranking based on Area-Yield Data</b><br>
+<b>Step 2: Identify Farmer Recollected Bad Year Ranking</b><br>
+<b>Step 3: Identify Satellite Bad Year Ranking</b><br>
+<b>Step 4: Compare ranking from Area-Yield, Farmer Recollection, and Satellite</b><br>
+<b>Step 5: Compare severity / magnitude of event across all three sources in the worst year for average yields</b></p>
+<p><br>
 <sub><em>We compare across three sources to triangulate and approximate what the severity / magnitude of the bad event is</em></sub>  </p>
-</li>
-<li>
-<p>Conduct sanity checks based on level of yields</p>
-</li>
+<ol>
+<li>Conduct sanity checks based on level of yields</li>
 </ol>
 <p><u>Source of data for Verification Example: </u></p>
 <ul>
