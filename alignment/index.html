@@ -310,6 +310,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Questions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#weather-based-index-insurance-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Weather-based index insurance verification
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#area-yield-index-insurance-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Area-yield index insurance verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -409,10 +433,9 @@ This section examines how well the chosen insurance index aligns with farmers' e
 🔍 a. How well does what payouts would have been align with farmer payout expectations based on your chosen index?
 </h3>
 
+<h3 id="weather-based-index-insurance-verification"><h4 style="color:#1890ff; font-size:18px;">Weather-based index insurance verification</h4></h3>
 <p><img alt="Weather-based" src="../images/9.jpg" /></p>
-<h4 style="color:#1890ff; font-size:18px;">Weather-based index insurance verification</h4>
-
-<p>The accuracy of a chosen area-yield index can be verified through a slightly different method, outlined below. Because area-yield indices rely on aggregate data, they can be less precise. To assess accuracy of the index, it's worth comparing area-yield data with both farmer recall of bad years and satellite imagery, allowing for better triangulation.</p>
+<p>The accuracy of a chosen weather-based index can be verified through a simple method developed by the Columbia Climate School together with the 2022 SIPA Capstone team, outlined below.</p>
 <p><u>Source of data:</u> The example uses data from Ethiopia's Genete village collected by the Columbia Climate School, spanning the years 1983 - 2020. The raw data includes satellite rainfall measurements and farmer recollection of bad years, which were used to arrive at index and farmer expected payout values. </p>
 <p><b> Step 1: Identify Index Bad Year Payout based on weather index data </b></p>
 <p>Begin by calculating the would-be payout for each year based on historical weather data and the insurance product's design.</p>
@@ -451,8 +474,8 @@ This section examines how well the chosen insurance index aligns with farmers' e
 <p>Summarize the findings using both quantitative metrics and visual tools:</p>
 <ul>
 <li>Calculate:<ul>
-<li><u> Matching Rate </u> – the percentage of years where index payouts matched farmer expectations.</li>
-<li><u> Average Downside Difference </u> – average difference in years where the index underpaid relative to farmer expectations.</li>
+<li><span style="color:blue;"> Matching Rate </span> – the percentage of years where index payouts matched farmer expectations.</li>
+<li><span style="color:blue;"> Average Downside Difference </span> – average difference in years where the index underpaid relative to farmer expectations.</li>
 </ul>
 </li>
 <li>Create scatter plots to display alignment and mismatches across all years.</li>
@@ -474,28 +497,56 @@ This section examines how well the chosen insurance index aligns with farmers' e
 <p><br>
 <br></p>
 <hr />
+<h3 id="area-yield-index-insurance-verification"><h4 style="color:#1890ff; font-size:18px;">Area-yield index insurance verification</h4></h3>
 <p><img alt="Area-yield" src="../images/10.jpg" /></p>
-<h4 style="color:#1890ff; font-size:18px;">Area-yield index insurance verification</h4>
-
-<p><u>Source of data:</u> The example uses data from Rwanda's Karongi village collected by One Acre Fund. The raw data includes:
- - average yield data for maize harvested in Season A from 2014-2021 (8 years)
- - farmer recollection of bad years from 1992-2021 (30 years)
- - satellite rainfall measurements from CHIRPS  from 1992-2021 (30 years)</p>
-<p><b>Step 1: Identify Yield Bad Year Ranking based on Area-Yield Data</b><br>
-<b>Step 2: Identify Farmer Recollected Bad Year Ranking</b><br>
-<b>Step 3: Identify Satellite Bad Year Ranking</b><br>
-<b>Step 4: Compare ranking from Area-Yield, Farmer Recollection, and Satellite</b><br>
-<b>Step 5: Compare severity / magnitude of event across all three sources in the worst year for average yields</b></p>
-<p><br>
-<sub><em>We compare across three sources to triangulate and approximate what the severity / magnitude of the bad event is</em></sub>  </p>
-<ol>
-<li>Conduct sanity checks based on level of yields</li>
-</ol>
-<p><u>Source of data for Verification Example: </u></p>
+<p>The accuracy of a chosen area-yield index can be verified through a slightly different method, outlined below. Because area-yield indices rely on aggregate data, they can be less precise. To assess accuracy of the index, it's worth comparing area-yield data with both farmer recall of bad years and satellite imagery, allowing for better triangulation.</p>
+<p><u>Source of data:</u> The example uses data from Rwanda's Karongi village collected by One Acre Fund. The raw data includes: </p>
 <ul>
-<li>Rwanda, Collected by One Acre Fund</li>
-<li>Time period: 1992-2021, Focus on district Karongi</li>
+<li>
+<p>average yield data for maize harvested in Season A from 2014-2021 (8 years)</p>
+</li>
+<li>
+<p>farmer recollection of bad years from 1992-2021 (30 years)</p>
+</li>
+<li>
+<p>satellite rainfall measurements from CHIRPS  from 1992-2021 (30 years)</p>
+</li>
 </ul>
+<p><b>Step 1: Identify Yield Bad Year Ranking based on Area-Yield Data</b><br></p>
+<ul>
+<li>Start by calculating average yields, often available for only a few years. For example, maize yields in Karongi, Rwanda (2014–2021) were estimated from randomly sampled sites within the district. </li>
+<li>These yields are then ranked from lowest (worst year) to highest (least bad year).</li>
+</ul>
+<p><b>Step 2: Identify Farmer Recollected Bad Year Ranking</b><br></p>
+<p>Similar to the weather-based index verification process, identify farmer recollection of bad years by asking farmers in Focus Group Discussions what their bad years were from worst to least bad. </p>
+<p><b>Step 3: Identify Satellite Bad Year Ranking</b><br></p>
+<p>Identify satellite bad year ranking through a process similar to determining the index would-be payout for the weather-based index verification. </p>
+<ul>
+<li>This means taking rainfall or weather measurements, setting a trigger and exit, then arriving at a number that represents the payout that farmers would have gotten for that year as a % of max liability. </li>
+<li>Rank the results from highest (worst) to lowest (least bad).</li>
+</ul>
+<p><b>Step 4: Compare ranking from Area-Yield, Farmer Recollection, and Satellite data</b><br></p>
+<ul>
+<li>Convert the average yield and satellite payout values into rankings for comparison across all three data sources.</li>
+<li>In one table, highlight the worst year for each data source. </li>
+</ul>
+<p><em> Note: Data sources have different time periods and methods of collection, so the worst years may not align perfectly. </em></p>
+<p><b>Step 5: Compare severity / magnitude of event across all three sources in the worst year for average yields</b></p>
+<ul>
+<li>Convert the figures into severity / magnitude of the event for that year by dividing the rank by the number of years available (e.g., in 2019, the magnitude of the event is 1 in 8 or 0.125)</li>
+<li>Check that the severity / magnitude of the event is similar across data sources for the worst year in terms of average yield</li>
+</ul>
+<p><em> Note: This simplified method is less effective for identifying similarities in the 2nd, 3rd, and subsequent worst years. </em></p>
+<p><b> Interpretation </b></p>
+<p>To assess accuracy, generate two high-level metrics:</p>
+<p><span style="color:blue;">
+1. Difference in severity / magnitude of the event between yield data and farmer recall<br>
+2. Difference in severity / magnitude of the event between yield data and satellite data
+</span></p>
+<p>The goal would be for the difference to be close to zero. While simplistic, this method gives some indication of the accuracy of the area-yield index.</p>
+<p><b> Step 6: Conduct sanity checks based on level of yields </b></p>
+<p>As a sanity check to have more confidence in this method and metric, it's best to verify whether the average yield of the worst year matches with farmer experience since average yield data can be rather noisy.
+This can be done by calculating how often the average yield in the worst year happens (X%) and talking to farmers to see if that squares with their experience. (e.g., Does the average yield such as that of the worst year indeed happen only X% of the time? ) </p>
 <p><a href="https://docs.google.com/spreadsheets/d/1z8th1AU5V0j2geHbZM7CPwVdK2TJPCLo/edit?gid=1497436127#gid=1497436127">🔗 Illustrative Verification Sheet</a></p>
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBNQ59vs3kKv2C57Xf-Xsui4F1LzuvU2BoXXGJSUbhAdTTV8UcaWN8RAtgc5KPWg/pubhtml?gid=1497436127&single=true&amp;headers=false" 
         width="100%" 
