@@ -197,7 +197,7 @@
         
   
   <span class="md-ellipsis">
-    About
+    Introduction
     
   </span>
   
@@ -293,16 +293,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#a-how-much-of-the-money-farmers-pay-is-expected-to-be-paid-out" class="md-nav__link">
-    <span class="md-ellipsis">
-      a. How much of the money farmers pay is expected to be paid out?
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="a. How much of the money farmers pay is expected to be paid out?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#calculator" class="md-nav__link">
     <span class="md-ellipsis">
       Calculator
@@ -311,32 +301,12 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#b-what-is-the-expected-size-and-frequency-of-payouts" class="md-nav__link">
-    <span class="md-ellipsis">
-      b. What is the expected size and frequency of payouts?
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="b. What is the expected size and frequency of payouts?">
-      <ul class="md-nav__list">
-        
           <li class="md-nav__item">
   <a href="#visualizer" class="md-nav__link">
     <span class="md-ellipsis">
       Visualizer
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -385,7 +355,7 @@
         
   
   <span class="md-ellipsis">
-    4. Addressing Gaps
+    4. Addressing Index Gaps
     
   </span>
   
@@ -454,27 +424,104 @@
 
 
 <h1 id="2-payout-value-and-distribution">2. Payout Value and Distribution</h1>
-<div style="border: 1px solid #007BFF; background-color: #E9F5FF; padding: 15px; border-radius: 8px;">
+<p><img alt="Distribution" src="../images/20.jpg" /></p>
+<div style="border: 1px solid #007BFF; background-color: #e6f7ff; padding: 15px; border-radius: 8px;">
 This section will look at how much farmers are getting for what they pay and whether insurance companies are getting enough payments to finance payouts using a simple calculator. It will also initiate discussions on the appropriate size and frequency of insurance to set farmer expectations on payouts.
 </div>
 
 <h2 id="questions">Questions</h2>
-<h3 id="a-how-much-of-the-money-farmers-pay-is-expected-to-be-paid-out">a. How much of the money farmers pay is expected to be paid out?</h3>
-<p>Verification through a calculator accessible here</p>
+<h3 style="background-color:#f9f9f9; padding:10px; border-left:6px solid #1890ff; border-radius:5px;">
+🌾 a. How much of the money farmers pay is expected to be paid out?
+</h3>
+
+<p>This question can be verified through a simple calculator.</p>
 <h4 id="calculator">Calculator</h4>
-<p>Placeholder for how to use the tool</p>
-<p><a href="https://docs.google.com/spreadsheets/d/1z8th1AU5V0j2geHbZM7CPwVdK2TJPCLo/edit?gid=158244143#gid=158244143">Illustrative Verification Sheet</a></p>
+<p>To get started, simply follow the steps below to input data, explore the results, and verify the visualization. The example uses dummy data to illustrate the process. </p>
+<p><b> Step 1: Input the Contract and Relevant Historical Data </b></p>
+<p>a. <u> Proposed Insurance Contract </u></p>
+<p>Input the following in the yellow cells under the left table:</p>
+<ul>
+<li>
+<p>Proposed premium rate</p>
+<ul>
+<li>If the premium is given as a %, enter it directly  [No 8]</li>
+<li>If it’s in a $ amount [No 7], make sure to also enter the maximum liability [No 6] so the calculator can compute the rate.</li>
+</ul>
+</li>
+</ul>
+<p>b. <u> Relevant Historical Values </u></p>
+<p>Make sure these values come from insurance products of the same type and coverage as your proposed contract!
+For example, if your product is weather index-based, the historical data should also be weather index-based.</p>
+<p>Input these in the yellow cells of the right-hand table:</p>
+<ul>
+<li>
+<p>Total value of maximum liability [No 1]</p>
+</li>
+<li>
+<p>Total value of gross premiums [No 2]</p>
+</li>
+<li>
+<p>Number of insurance contracts or farmers [No 3]</p>
+</li>
+<li>
+<p>Total value of payouts [No 4]</p>
+</li>
+<li>
+<p>Number of payouts [No 5]</p>
+</li>
+</ul>
+<p><em> Note: The grey cells will auto-calculate outputs like percentages and ratios using built-in formulas.</em></p>
+<p><b> Step 2: Calculate Key Metrics nad Ratio </b></p>
+<p>After entering the data, the calculator will show important indicators:</p>
+<ul>
+<li>Burning rate – shows how much has been paid out compared to the maximum liability.</li>
+<li>Expected Loss Ratio (ELR) – calculated as burning rate ÷ premium rate.</li>
+<li>This shows how much of the premium is expected to go back to farmers over time.</li>
+</ul>
+<p><em> Reminder: This is a simplified estimate. Actual insurance pricing may include more advanced methods or assumptions.</em></p>
+<p><b> Step 3: Define a Reasonable Expected Loss Ratio Range </b></p>
+<p>In the yellow cells in [Row 26], define your preferred range for ELR—for example, 50% to 80%.</p>
+<ul>
+<li>This range gives you a benchmark for what’s considered fair and sustainable.</li>
+<li>It helps compare different contracts consistently.</li>
+<li>Easier to interpret the result</li>
+</ul>
+<p><b> Step 4: Visual Check – Does it add up? </b></p>
+<p>The dashboard will show:</p>
+<ul>
+<li>A blue area = the reasonable range you defined.</li>
+<li>An orange area = Further discussion and questions should be asked to insurance company</li>
+<li>A yellow diamond = the calculated ELR (Step 2).</li>
+</ul>
+<p><b> Interpretation </b></p>
+<ul>
+<li>If it falls within the blue band → Looks okay.</li>
+<li>If it’s below → Premium might be too high → Farmers may be overpaying.</li>
+<li>If it’s above → Insurer might be underfunded → Risk to sustainability.</li>
+</ul>
+<p><a href="https://docs.google.com/spreadsheets/d/1z8th1AU5V0j2geHbZM7CPwVdK2TJPCLo/edit?gid=158244143#gid=158244143">🔗 Illustrative Verification Sheet</a></p>
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBNQ59vs3kKv2C57Xf-Xsui4F1LzuvU2BoXXGJSUbhAdTTV8UcaWN8RAtgc5KPWg/pubhtml?gid=158244143&single=true&amp;headers=false" 
         width="100%" 
         height="500" 
         style="border: none;">
 </iframe>
 
-<h3 id="b-what-is-the-expected-size-and-frequency-of-payouts">b. What is the expected size and frequency of payouts?</h3>
-<p>Visualization of the different scenarios can be done here</p>
+<h3 style="background-color:#f9f9f9; padding:10px; border-left:6px solid #1890ff; border-radius:5px;">
+📊 b. What is the expected size and frequency of payouts?
+</h3>
+
+<p>This section looks at <u> how much payouts typically are and how often they occur </u> - payout distribution is matters! The following method can be used to visualize this. </p>
 <h4 id="visualizer">Visualizer</h4>
-<p>Placeholder for how to use the tool</p>
-<p><a href="https://docs.google.com/spreadsheets/d/1z8th1AU5V0j2geHbZM7CPwVdK2TJPCLo/edit?gid=1671354798#gid=1671354798">Illustrative Visualization Sheet</a></p>
+<p>The example shows sample data from Ethiopia of what payouts would have been using a chosen weather-based index to help visualize average payout value and distribution. The bars indicate index would-be payout as a % of maximum liability. </p>
+<p><sub> <em> For more details on the step-by-step process of arriving at the Index Would-be Payout, see the third assessment section on 'Alignment with Farmer Losses.' </sub></em></p>
+<ul>
+<li>Too frequent = higher admin costs for the insurer.</li>
+<li>Too rare = not helpful for farmers.</li>
+</ul>
+<p>Ideally, one would aim for a <u> balanced pattern </u> with moderate timing and size of payouts.</p>
+<p><b> Interpretation </b></p>
+<p>The optimal <u> average index payout and frequency</u> can be assessed based on the expectations and needs of the insurance contracting entity and the farmers they will serve.</p>
+<p><a href="https://docs.google.com/spreadsheets/d/1z8th1AU5V0j2geHbZM7CPwVdK2TJPCLo/edit?gid=1671354798#gid=1671354798">🔗 Illustrative Visualization Sheet</a></p>
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBNQ59vs3kKv2C57Xf-Xsui4F1LzuvU2BoXXGJSUbhAdTTV8UcaWN8RAtgc5KPWg/pubhtml?gid=1671354798&single=true&amp;headers=false"  
         width="100%" 
         height="500" 

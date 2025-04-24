@@ -197,7 +197,7 @@
         
   
   <span class="md-ellipsis">
-    About
+    Introduction
     
   </span>
   
@@ -314,16 +314,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#a-how-well-does-what-payouts-would-have-been-align-with-farmer-payout-expectations-based-on-your-chosen-index" class="md-nav__link">
-    <span class="md-ellipsis">
-      a. How well does what payouts would have been align with farmer payout expectations based on your chosen index?
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="a. How well does what payouts would have been align with farmer payout expectations based on your chosen index?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#weather-based-index-insurance-verification" class="md-nav__link">
     <span class="md-ellipsis">
       Weather-based index insurance verification
@@ -338,11 +328,6 @@
       Area-yield index insurance verification
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -370,7 +355,7 @@
         
   
   <span class="md-ellipsis">
-    4. Addressing Gaps
+    4. Addressing Index Gaps
     
   </span>
   
@@ -439,29 +424,68 @@
 
 
 <h1 id="3-alignment-of-payouts-with-farmer-losses">3. Alignment of Payouts with Farmer Losses</h1>
-<div style="border: 1px solid #007BFF; background-color: #E9F5FF; padding: 15px; border-radius: 8px;">
-The section will look at how well the chosen index for the insurance matches farmer's experience of losses. There is a follow up question for weather-based index insurance around when measurements will be taken since this decides payout. 
+<div style="border: 1px solid #007BFF; background-color: #e6f7ff; padding: 15px; border-radius: 8px;">
+The section will look at how well the chosen index for the insurance matches farmer's experience of losses. TWo verification methods are tailored specifically for weather-based and area-yield index insurance, because the underlying indices differ. For weather-based insurance, we directly compare index payouts with years farmers recall as the worst.
+For area-yield insurance, we triangulate farmer recall, yield data, and satellite imagery to verify payout accuracy.
 </div>
 
 <h2 id="questions">Questions</h2>
-<h3 id="a-how-well-does-what-payouts-would-have-been-align-with-farmer-payout-expectations-based-on-your-chosen-index">a. How well does what payouts would have been align with farmer payout expectations based on your chosen index?</h3>
+<h3 style="background-color:#f9f9f9; padding:10px; border-left:6px solid #1890ff; border-radius:5px;">
+🔍 a. How well does what payouts would have been align with farmer payout expectations based on your chosen index?
+</h3>
+
 <h4 id="weather-based-index-insurance-verification">Weather-based index insurance verification</h4>
-<p><img alt="X" src="../images/9.jpg" /></p>
-<p><u>Steps to conducting the verification:</u></p>
-<ol>
-<li>Identify Index Bad Year Payout based on weather index data</li>
-<li>Compare Index Bad Year Payout to Farmer Expected Payout</li>
-<li>Identify Farmer Ranking of Bad Years</li>
-<li>Calculate Farmer Recollected Bad Year Payout</li>
-<li>Compare Index Bad Year Payout to Farmer Recollected Bad Year Payout</li>
-<li>Analyze accuracy and visualize alignment across sources</li>
-</ol>
-<p><u>Source of data for Verification Example: </u></p>
+<p>The accuracy of a chosen weather-based index can be verified through a simple method, outlined below.</p>
+<p><img alt="Weather-based" src="../images/9.jpg" /></p>
+<p><b> Step 1: Identify Index Bad Year Payout based on weather index data </b></p>
+<p>Begin by calculating the would-be payout for each year based on historical weather data and the insurance product's design.</p>
+<ul>
+<li>Use the contract’s trigger variable (e.g., rainfall amount, dry spell duration, or temperature extremes).</li>
+<li>Reference predefined payout thresholds: the trigger point (when payouts begin) and the exit point (when the full payout is due).</li>
+<li>
+<p>Use the insurance formula to determine payouts per year based on how the actual weather compares to these thresholds.</p>
+</li>
+<li>
+<p>This step provides the index-based perspective on which years were “bad” enough to justify a payout.</p>
+</li>
+</ul>
+<p><b> Step 2: Compare Index Bad Year Payout to Farmer Expected Payout </b></p>
+<p>a. <u> Identify Farmer Ranking of Bad Years </u></p>
+<ul>
+<li>Conduct focus group discussions with farmers from the target area. Through participatory methods, ask farmers to rank years from best to worst in terms of agricultural performance or hardship.</li>
+<li>This process surfaces local knowledge and lived experiences of climate stress.</li>
+<li>Farmers identify years that caused the most financial stress, food insecurity, or crop failure.</li>
+</ul>
+<p>b. <u> Calculate Farmer Recollected Bad Year Payout </u></p>
+<ul>
+<li>Based on the rankings, assign an estimated payout value to each "bad year" identified by farmers. This is a proxy for what farmers would have expected from the insurance had it truly matched their experience.</li>
+<li>For example, a year ranked as the “worst” might correspond to a 100% expected payout; the second-worst might get 75%, and so on.</li>
+<li>This provides the farmer perspective on when support was most needed.</li>
+</ul>
+<p><b> Step 3: Compare Index Bad Year Payout to Farmer Recollected Bad Year Payout </b></p>
+<p>Now compare the index-calculated payouts with the farmer-expected payouts for each year:</p>
+<ul>
+<li>Identify years when both the index and farmers agree—these are “match years.”</li>
+<li>Flag years when the index didn’t trigger a payout despite farmers identifying high losses—these are signs of basis risk (i.e., <em> downside basis risk </em>)</li>
+<li>Also look for years where the index pays, but farmers didn’t report major losses—this may suggest false positives (i.e., <em> upside basis risk </em>)</li>
+</ul>
+<p>This comparison helps quantify the accuracy and fairness of the index design.</p>
+<p><b> Step 4: Analyze accuracy and visualize alignment across sources </b></p>
+<p>Summarize the findings using both quantitative metrics and visual tools:</p>
+<ul>
+<li>Calculate:</li>
+<li>Matching rate – the percentage of years where index payouts matched farmer expectations.</li>
+<li>Downside gap – average difference in years where the index underpaid relative to farmer expectations.</li>
+<li>Create scatter plots to display alignment and mismatches across all years.</li>
+<li>Use these visuals to engage stakeholders—insurance providers, regulators, and farmer organizations—in identifying needed improvements.</li>
+</ul>
+<p>This step transforms data into insight: Are payouts happening when they matter most to farmers?</p>
+<p><b><u>Source of data for Verification Example: </u></b></p>
 <ul>
 <li>Ethiopia, Collected by Columbia Climate School</li>
 <li>Time period: 1983-2020, Focus on village Genete</li>
 </ul>
-<p><a href="https://docs.google.com/spreadsheets/d/1z8th1AU5V0j2geHbZM7CPwVdK2TJPCLo/edit?gid=543532796#gid=543532796">Illustrative Verification Sheet</a></p>
+<p><a href="https://docs.google.com/spreadsheets/d/1z8th1AU5V0j2geHbZM7CPwVdK2TJPCLo/edit?gid=543532796#gid=543532796">🔗 Illustrative Verification Sheet</a></p>
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBNQ59vs3kKv2C57Xf-Xsui4F1LzuvU2BoXXGJSUbhAdTTV8UcaWN8RAtgc5KPWg/pubhtml?gid=543532796&single=true&amp;headers=false" 
         width="100%" 
         height="500" 
@@ -471,7 +495,7 @@ The section will look at how well the chosen index for the insurance matches far
 <br></p>
 <hr />
 <h4 id="area-yield-index-insurance-verification">Area-yield index insurance verification</h4>
-<p><img alt="X" src="../images/10.jpg" /></p>
+<p><img alt="Area-yield" src="../images/10.jpg" /></p>
 <p><u>Steps to conducting the verification:</u></p>
 <ol>
 <li>Identify Yield Bad Year Ranking based on Area-Yield Data</li>
@@ -491,7 +515,7 @@ The section will look at how well the chosen index for the insurance matches far
 <li>Rwanda, Collected by One Acre Fund</li>
 <li>Time period: 1992-2021, Focus on district Karongi</li>
 </ul>
-<p><a href="https://docs.google.com/spreadsheets/d/1z8th1AU5V0j2geHbZM7CPwVdK2TJPCLo/edit?gid=1497436127#gid=1497436127">Illustrative Verification Sheet</a></p>
+<p><a href="https://docs.google.com/spreadsheets/d/1z8th1AU5V0j2geHbZM7CPwVdK2TJPCLo/edit?gid=1497436127#gid=1497436127">🔗 Illustrative Verification Sheet</a></p>
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBNQ59vs3kKv2C57Xf-Xsui4F1LzuvU2BoXXGJSUbhAdTTV8UcaWN8RAtgc5KPWg/pubhtml?gid=1497436127&single=true&amp;headers=false" 
         width="100%" 
         height="900" 
@@ -543,13 +567,13 @@ The section will look at how well the chosen index for the insurance matches far
         
         
           
-          <a href="../addressinggaps/" class="md-footer__link md-footer__link--next" aria-label="Next: 4. Addressing Gaps">
+          <a href="../addressinggaps/" class="md-footer__link md-footer__link--next" aria-label="Next: 4. Addressing Index Gaps">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                4. Addressing Gaps
+                4. Addressing Index Gaps
               </div>
             </div>
             <div class="md-footer__button md-icon">
